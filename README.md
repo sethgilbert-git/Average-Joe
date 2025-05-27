@@ -23,16 +23,4 @@ greeting = "Hello world!"
 name = "I am seth."
 greeting_with_name = greeting + " " + name
 print(greeting_with_name)
-# practice with block letters to form my initials
-# Seth Gilbert initals
-# I like to watch anime!
-# top portion of S and G
-print("    sss      gggg")
-print("  s     s   g    g")
-# middle portion of S and G
-print('  s         g    g')     
-print('    sss     g')
-print('        s   g  ggg')
-# bottom of S and G
-print('  s     s   g    g')
-print('    sss      gggg')  
+
