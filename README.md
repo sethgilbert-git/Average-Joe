@@ -75,5 +75,12 @@ credits = 120
 gpa = 3.4
 
 if credits >= 120 and gpa >= 2.0:
-  print("You meet the requirements to graduate!")
+  print("You meet the requirements to graduate")
+
+# practice with "or"
+True or (3 + 4 == 7)    # True
+(1 - 1 == 0) or False   # True
+(2 < 0) or True         # True
+(3 == 8) or (3 > 4)     # False
+
 
