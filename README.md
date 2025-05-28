@@ -80,6 +80,20 @@ gpa = 2.0
 if credits >= 120 or gpa >= 2.0:
   print("You have met at least one of the requirements.")
 
+# expanding with "not"
+credits = 120
+gpa = 1.8
+
+if not credits >= 120:
+  print("You do not have enough credits to graduate.")
+if not gpa >= 2.0 :
+  print("Your GPA is not high enough to graduate.")
+if not credits >= 120 and not gpa >= 2.0:
+  print("You do not meet either requirement to graduate!")
+
+
+
+
 
 # practice with and
 statement_one = (2 + 2 + 2 >= 6) and (-1 * -1 < 0)
@@ -92,5 +106,7 @@ True or (3 + 4 == 7)    # True
 (1 - 1 == 0) or False   # True
 (2 < 0) or True         # True
 (3 == 8) or (3 > 4)     # False
-
+# practice with not
+statement_one = not (4 + 5 <= 9)  # false due to "not". not makes it opposite
+statement_two = not (8 * 2) != 20 - 4  # true
 
