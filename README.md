@@ -90,8 +90,26 @@ if not gpa >= 2.0 :
   print("Your GPA is not high enough to graduate.")
 if not credits >= 120 and not gpa >= 2.0:
   print("You do not meet either requirement to graduate!")
+# adding in "else"
+credits = 120
+gpa = 1.9
 
-
+if (credits >= 120) and (gpa >= 2.0):
+  print("You meet the requirements to graduate!")
+else:
+  print("You do not meet the requirements to graduate.")
+ # practice with if, elif, else statements
+ grade = 86
+if grade >= 90:
+  print("A")
+elif grade >= 80:
+  print("B")
+elif grade >= 70:
+  print("C")
+elif grade>= 60:
+  print("D")
+else:
+  print("F")
 
 
 
