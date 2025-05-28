@@ -33,4 +33,12 @@ print(greeting_with_name)
 3 == 5     # Evaluates to False as the operands are different
  
 '7' == 7   # Evaluates to False as the operands are different types 
+# first expression will store as true because the two values are equal. This uses the equal to operator
+first_expression = 2 * 2 == 2 + 2
+# seocond expression will store as true as well because the values are not equal. This uses the not equal operator
+second_expression = 3 + 3 != 3 * 3 
+# third expression will show as false because defining the value 9 makes the values not equal
+third_expression = 3 * 3 == '9'
+# printing the boolean expression answers
+print(first_expression, second_expression, third_expression)
 
