@@ -50,4 +50,21 @@ if user_name == "Dave":
  # dave is using someone elses username, so I set another conditional statement for if he uses her username
 if user_name == "angela_catlady_87":
   print("I know it is you, Dave! Go away!")
+# more practive with boolean and conditional statements
+# setting variable values for x and y
+x = 20
+y = 20
+
+# Write the first if statement here:
+if x == y:
+  print("These numbers are the same")
+
+# scenario for college credits
+credits = 120
+
+# if the student has enough credits, then the system prints a message that tehy have enough
+if credits >= 120:
+  print("You have enough credits to graduate!")
+
+
 
