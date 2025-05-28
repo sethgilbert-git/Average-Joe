@@ -66,16 +66,26 @@ credits = 120
 if credits >= 120:
   print("You have enough credits to graduate!")
 
-statement_one = (2 + 2 + 2 >= 6) and (-1 * -1 < 0)
-# would express as false becuase of the second statement if false
-statement_two = (4 * 2 <= 8) and (7 - 1 == 6)
-# would express as true because both statements are true
 # expanding on the graduation requirements with conditional statements
 credits = 120
 gpa = 3.4
 
 if credits >= 120 and gpa >= 2.0:
   print("You meet the requirements to graduate")
+
+# showing that they meet one of the graduation requirements
+credits = 118
+gpa = 2.0
+
+if credits >= 120 or gpa >= 2.0:
+  print("You have met at least one of the requirements.")
+
+
+# practice with and
+statement_one = (2 + 2 + 2 >= 6) and (-1 * -1 < 0)
+# would express as false becuase of the second statement if false
+statement_two = (4 * 2 <= 8) and (7 - 1 == 6)
+# would express as true because both statements are true
 
 # practice with "or"
 True or (3 + 4 == 7)    # True
