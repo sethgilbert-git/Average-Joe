@@ -23,4 +23,14 @@ greeting = "Hello world!"
 name = "I am seth."
 greeting_with_name = greeting + " " + name
 print(greeting_with_name)
+# notes for boolean expressions
+1 == 1     # Evaluates to True as the operands are the same (equals to expression)
+
+1 != 1     # Evaluates to False as the operands are the same (not equal expression)
+
+2 != 4     # Evaluates to True as the operands are different 
+
+3 == 5     # Evaluates to False as the operands are different
+ 
+'7' == 7   # Evaluates to False as the operands are different types 
 
