@@ -41,4 +41,13 @@ second_expression = 3 + 3 != 3 * 3
 third_expression = 3 * 3 == '9'
 # printing the boolean expression answers
 print(first_expression, second_expression, third_expression)
+# extra practice with boolean expressions and conditional statements
+# Entering a username for a coworker named dave. He is always on my computer and he uses someone else's username to throw me off his trail
+user_name = "angela_catlady_87"
+# if dave uses his name as the username then my program will tell dave to get off
+if user_name == "Dave":
+  print("Get off my computer Dave!")
+ # dave is using someone elses username, so I set another conditional statement for if he uses her username
+if user_name == "angela_catlady_87":
+  print("I know it is you, Dave! Go away!")
 
