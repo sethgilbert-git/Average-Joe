@@ -33,3 +33,24 @@ incoming_class[2][2] = 8
 print(incoming_class)
 incoming_class[-3][-3] = "Ken"
 print(incoming_class)
+
+#  entering customer data for her web store business. We’re going to help her organize her data 
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+preferred_size = ["Small", "Large", "Medium"]
+preferred_size.append("Medium")
+print(preferred_size)
+# Maria is having a hard time visualizing which customer is associated with each size. Let’s restructure our two lists into a two-dimensional list to help Maria.
+# being reflected using a boolean value (True for expedited, False for regular)
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+print(customer_data)
+#"Chani" reached out to Maria. She requested to switch to regular shipping to save some money.
+customer_data[-2][-1] = False
+print(customer_data)
+# "Ben" reached out to Maria asking to remove his shipping option (the True or False value) because he is unsure what type he wants.
+customer_data[1].remove(False)
+print(customer_data)
+#  One last thing, Maria received new customers, "Amit" and "Karim"
+customer_data_final = customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
+print(customer_data_final)
+
+
