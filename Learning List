@@ -53,4 +53,9 @@ print(customer_data)
 customer_data_final = customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
 print(customer_data_final)
 
+# Practice .insert()
+front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"]
+# I will place pineapple at the front of the list, which is why the number will be zero
+front_display_list.insert(0, "Pineapple")
+print(front_display_list)
 
