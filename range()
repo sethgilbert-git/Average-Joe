@@ -1,0 +1,8 @@
+
+# Task 1: Put in a range from 0-8. Range containing numbers starting at 0 and up to, but not including, 9.
+number_list = range(9)
+# Task 2: convert that range into a list of numbers
+print(list(number_list))
+# Task 3: Create a range called zero_to_seven with the numbers 0 through 7.
+zero_to_seven = range(8)
+print(list(zero_to_seven))
