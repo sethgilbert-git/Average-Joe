@@ -1,0 +1,9 @@
+data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Statistics", "Python 3"]
+print(data_science_topics)
+# It looks like we have an overlap with our computer science curriculum for the topic of "Python 3", so i will remove it.
+# If .pop() is left blank then it will romove the last string in the list
+data_science_topics.pop()
+print(data_science_topics)
+# Looks like there is overlap on the "Algorithms" topic as well.
+data_science_topics.pop(3)
+print(data_science_topics)
