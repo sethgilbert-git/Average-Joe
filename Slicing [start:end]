@@ -1,1 +1,34 @@
+letters = ["a", "b", "c", "d", "e", "f", "g"]
+# start is the index of the first element that we want to include in our selection. In this case, we want to start at "b", which has index 1.
+# end is the index of one more than the last index that we want to include. The last element we want is "f", which has index 5, so end needs to be 6.
+sliced_list = letters[1:6]
+print(sliced_list)
+# Would output: ["b", "c", "d", "e", "f"]
 
+#Task 1: Modify beginning, so that it selects the first 2 elements of suitcase.
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+beginning = suitcase[0:2]
+print(beginning)
+
+# Create a new list called middle that contains the middle two items ( ["pants", "pants"] ) from suitcase
+
+middle = suitcase[2:4]
+print(middle)
+
+# Take the list fruits as our example:
+fruits = ["apple", "cherry", "pineapple", "orange", "mango"]
+print(fruits[:3])
+# would output: ['apple', 'cherry', 'pineapple']
+print(fruits[-2:])
+# Would output: ['orange', 'mango']
+print(fruits[:-1])
+# Would output: ['apple', 'cherry', 'pineapple', 'orange']
+
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+# Your code below: 
+last_two_elements = suitcase[-2:]
+print(last_two_elements)
+slice_off_last_three = suitcase[:-3]
+print(slice_off_last_three)
