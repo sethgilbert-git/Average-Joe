@@ -1,0 +1,28 @@
+# if we wanted to print out a "Learning Loops!" message six times using a for loop, we would follow this structure:
+# for <temporary variable> in <list of length 6>:
+#  print("Learning Loops!")
+# for temp in range(6):
+#  print("Learning Loops!")
+# Learning Loops!
+# Learning Loops!
+# Learning Loops!
+# Learning Loops!
+# Learning Loops!
+# Learning Loops!
+for temp in range(6):
+  print("Loop is on iteration number " + str(temp + 1))
+# Would output: Loop is on iteration number 1
+# Loop is on iteration number 2
+# Loop is on iteration number 3
+# Loop is on iteration number 4
+# Loop is on iteration number 5
+# Loop is on iteration number 6
+
+
+ 
+
+
+promise = "I will finish the python loops module!"
+
+for love in range(5):
+  print(promise)
