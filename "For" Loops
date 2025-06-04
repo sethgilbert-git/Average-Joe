@@ -1,0 +1,22 @@
+ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+
+for ingredient in ingredients:
+  print(ingredient)
+# 1 - ingredient is the <temporary variable>.
+# 2 - ingredients is our <collection>.
+# 3 - print(ingredient) was the <action> performed on every iteration using the temporary variable of ingredient.
+# This code outputs: milk, sugar, vanilla extract, dough, chocolate
+# for ingredient in ingredients:
+  # Any code at this level of indentation 
+  # will run on each iteration of the loop
+
+
+board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
+
+sport_games = ["football", "hockey", "baseball", "cricket"]
+
+for game in board_games:
+  print(game)
+
+for sport in sport_games:
+  print(sport)
