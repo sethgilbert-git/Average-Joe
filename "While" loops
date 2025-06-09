@@ -29,5 +29,26 @@ countdown = 10
 while countdown >= 0:
   print(str(countdown - 1))
 print("We have liftoff!")
+#--------------------------------------------------------------------------------------------------------------------
+
+python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+
+#Your code below: 
+length = len(python_topics)
+index = 0
+while index < length:
+  # On the first iteration, we will be comparing the equivalent of 0 < 5 which will evaluate to True, and start the execution of our loop body.
+  print("I am learning about", python_topics[index])
+  # Inside of our loop body, we can use the index variable to access our ingredients list and print the value at the current iteration. Since our index starts at zero, our first iteration will print the value of the element at the zeroth index of our ingredients list, then the next iteration will print the value of the element at the first index, and so on.
+
+  index += 1
+  # On each iteration of our while loop, we need to also increment the value of index to make sure our loop can stop once the index value is no longer smaller than the length value. This increment also helps us access the next value of the ingredients list on the next iteration.
+
+# outputs: I am learning about variables
+#I am learning about control flow
+#I am learning about loops
+#I am learning about modules
+#I am learning about classes
+
 
 
