@@ -1,0 +1,38 @@
+#Suppose we are in charge of a science class, that is split into three project teams:
+project_teams = [["Ava", "Samantha", "James"], ["Lucille", "Zed"], ["Edgar", "Gabriel"]]
+#Using a for or while loop can be useful here to get each team:
+for team in project_teams:
+  print(team)
+# Would output:
+#["Ava", "Samantha", "James"]
+#["Lucille", "Zed"]
+#["Edgar", "Gabriel"]
+#But what if we wanted to print each individual student? In this case, we would actually need to nest our loops to be able to loop through each sub-list. Here is what it would look like:
+# Loop through each sublist
+for team in project_teams:
+  # Loop elements in each sublist
+  for student in team:
+    print(student)
+#This would output:
+#Ava
+#Samantha
+#James
+#Lucille
+#Zed
+#Edgar
+#Gabriel
+
+
+
+
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+scoops_sold = 0
+
+for location in sales_data:
+  print(location)
+  for scoops in location:
+    scoops_sold += scoops
+print(scoops_sold)
+    
+
+#_______________________________________________________________________________________________________________________
