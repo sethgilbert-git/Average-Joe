@@ -27,3 +27,50 @@ print(doubled)
 grades = [90, 88, 62, 76, 74, 89, 48, 57]
 scaled_grades = [grade + 10 for grade in grades]
 print(scaled_grades)
+#________________________________________________________________________________________________________________
+#CONDITIONALS
+#____________________________________________________________________________________________________________________
+#Suppose we wanted to double only our negative numbers from our previous numbers list.
+numbers = [2, -1, 79, 33, -45]
+only_negative_doubled = []
+
+for num in numbers:
+  if num < 0: 
+    only_negative_doubled.append(num * 2)
+
+print(only_negative_doubled) 
+
+#Would output: [-2, -90]
+#Now, here is what our code would look like using a list comprehension:
+numbers = [2, -1, 79, 33, -45]
+negative_doubled = [num * 2 for num in numbers if num < 0]
+print(negative_doubled)
+
+#Would output the same result: [-2, -90]
+# In our negative_doubled example, our list comprehension:
+
+#Takes an element in the list numbers.
+#Assigns that element to a variable called num.
+#Checks if the condition num < 0 is met by the element stored in num. If so, it goes to step 4, otherwise it skips it and goes to the next element in the list.
+#Applies the expression num * 2 on the element stored in num and adds the result to a new list called negative_doubled
+#Repeats steps 1-3 (and sometimes 4) for each remaining element in the numbers list.
+
+# We can also use If-Else conditions directly in our comprehensions. For example, let’s say we wanted to double every negative number but triple all positive numbers. Here is what our code might look like:
+
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 if num < 0 else num * 3 for num in numbers ]
+print(doubled)
+#Would output: [6, -2, 237, 99, -90]
+
+#NOTE: This is a bit different than our previous comprehension since the conditional if num < 0 else num * 3 comes after the expression num * 2 but before our for keyword. The placement of the conditional expression within the comprehension is dependent on whether or not an else clause is used. When an if statement is used without else, the conditional must go after for <element> in <collection>. If the conditional expression includes an else clause, the conditional must go before for. Attempting to write the expressions in any other order will result in a SyntaxError.
+#Here are a few list comprehensions in a single block. Take a moment to compare how the syntax must change depending on whether or not an else clause is included:
+numbers = [2, -1, 79, 33, -45]
+
+no_if   = [num * 2 for num in numbers]
+if_only = [num * 2 for num in numbers if num < 0]
+if_else = [num * 2 if num < 0 else num * 3 for num in numbers]
+
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+can_ride_coaster = [height for height in heights if height > 161]
+print(can_ride_coaster)
